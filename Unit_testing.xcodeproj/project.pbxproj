@@ -16,6 +16,7 @@
 		EE78B61625C6B78C00CC3802 /* Unit_testingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE78B61525C6B78C00CC3802 /* Unit_testingTests.swift */; };
 		EE78B62125C6B78C00CC3802 /* Unit_testingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE78B62025C6B78C00CC3802 /* Unit_testingUITests.swift */; };
 		EE78B63225C6B81800CC3802 /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE78B63125C6B81800CC3802 /* text.txt */; };
+		EE78B63725C6E93600CC3802 /* PlayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE78B63625C6E93500CC3802 /* PlayData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		EE78B62025C6B78C00CC3802 /* Unit_testingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit_testingUITests.swift; sourceTree = "<group>"; };
 		EE78B62225C6B78C00CC3802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE78B63125C6B81800CC3802 /* text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = text.txt; path = ../../../../text.txt; sourceTree = "<group>"; };
+		EE78B63625C6E93500CC3802 /* PlayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				EE78B60025C6B78500CC3802 /* SceneDelegate.swift */,
 				EE78B60225C6B78500CC3802 /* ViewController.swift */,
 				EE78B60425C6B78500CC3802 /* Main.storyboard */,
+				EE78B63625C6E93500CC3802 /* PlayData.swift */,
 				EE78B60725C6B78C00CC3802 /* Assets.xcassets */,
 				EE78B60925C6B78C00CC3802 /* LaunchScreen.storyboard */,
 				EE78B63125C6B81800CC3802 /* text.txt */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE78B60325C6B78500CC3802 /* ViewController.swift in Sources */,
+				EE78B63725C6E93600CC3802 /* PlayData.swift in Sources */,
 				EE78B5FF25C6B78500CC3802 /* AppDelegate.swift in Sources */,
 				EE78B60125C6B78500CC3802 /* SceneDelegate.swift in Sources */,
 			);
