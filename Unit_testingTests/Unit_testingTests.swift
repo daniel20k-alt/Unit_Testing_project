@@ -27,9 +27,18 @@ class Unit_testingTests: XCTestCase {
     func testWordCountsAreCorrect() {
         let playData = PlayData()
         
-        XCTAssertEqual(playData.wordCounts["pursue"], 15, "Pursue does not appear 15 times")
-        XCTAssertEqual(playData.wordCounts["winning"], 2, "Winning does not appear 2 times")
-        XCTAssertEqual(playData.wordCounts["amazed"], 18, "Amazed does not appear 15 times")
+        XCTAssertEqual(playData.wordCounts.count(for: "pursue"), 15, "Pursue does not appear 15 times")
+
+        XCTAssertEqual(playData.wordCounts.count(for: "winning"), 2, "Winning does not appear 2 times")
+        XCTAssertEqual(playData.wordCounts.count(for: "amazed"), 18, "Amazed does not appear 15 times")
         
     }
+    
+//    verifying how much time it takes to load
+    func testWordsLoadQuickly() {
+        measure {
+            _ = PlayData()
+        }
+    }
 }
+
