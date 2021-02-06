@@ -40,5 +40,28 @@ class Unit_testingTests: XCTestCase {
             _ = PlayData()
         }
     }
+    
+    
+    func testUserFilterWorks() {
+        let playData = PlayData()
+        
+            playData.applyUserFilter("100")
+            XCTAssertEqual(playData.filteredWords.count, 495, "This word does not appear exactly 100 times")
+
+            playData.applyUserFilter("1000")
+            XCTAssertEqual(playData.filteredWords.count, 55, "This word does not appear exactly 55 times")
+
+            playData.applyUserFilter("10000")
+            XCTAssertEqual(playData.filteredWords.count, 1, "This word does not appear exactly 1 time")
+
+            playData.applyUserFilter("test")
+            XCTAssertEqual(playData.filteredWords.count, 56, "This word does not appear exactly 56 times")
+
+            playData.applyUserFilter("swift")
+            XCTAssertEqual(playData.filteredWords.count, 7, "This word does not appear exactly 7 times")
+
+            playData.applyUserFilter("objective-c")
+            XCTAssertEqual(playData.filteredWords.count, 0, "This word should not be here")
+    }
 }
 
