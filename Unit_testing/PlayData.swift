@@ -14,8 +14,8 @@ class PlayData {
     
   private(set)  var filteredWords = [String]()
     
-    init() {
-        
+    init()  {
+
         if let path = Bundle.main.path(forResource: "text", ofType: "txt") {
             if let plays = try? String(contentsOfFile: path) {
                 allWords = plays.components(separatedBy: CharacterSet.alphanumerics.inverted)
@@ -25,6 +25,7 @@ class PlayData {
                 let sorted = wordCounts.allObjects.sorted { wordCounts.count(for: $0) > wordCounts.count(for: $1) }
                 allWords = sorted as! [String]
                 
+                applyUserFilter("swift")
             }
         }
     }
